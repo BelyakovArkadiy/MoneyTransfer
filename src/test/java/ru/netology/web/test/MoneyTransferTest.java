@@ -129,7 +129,7 @@ class MoneyTransferTest {
     val balanceFirstBillBeforeTransfer = dashboardPage.getFirstCardBalance();
     val balanceSecondBillBeforeTransfer = dashboardPage.getSecondCardBalance();
     val moneyTransferPage = dashboardPage.firstBill();
-    int amount = 100000;
+    int amount = 50000;
     moneyTransferPage.transferMoney(amount, DataHelper.getCardSecond());
     moneyTransferPage.errorMessage1();
 

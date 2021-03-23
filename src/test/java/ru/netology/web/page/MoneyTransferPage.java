@@ -28,12 +28,12 @@ public class MoneyTransferPage {
         return new DashboardPage();
     }
 
-    public SelenideElement errorMessage1(){
-        return $(withText("У вас недостаточно средств на карте")).shouldBe(Condition.visible);
+    public void errorMessage1(){
+        $(withText("У вас недостаточно средств на карте")).shouldBe(Condition.visible);
     }
 
-    public SelenideElement errorMessage2(){
-        return $(withText("Отмена. Минимальный перевод 1 рубль")).shouldBe(Condition.visible);
+    public void errorMessage2(){
+        $(withText("Отмена. Минимальный перевод 1 рубль")).shouldBe(Condition.visible);
     }
 
 
